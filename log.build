@@ -11108,3 +11108,26 @@ Step 9/10 : RUN pip install bs4 && pip install requests
 [0m20200810_095343 - Build FAILED!! Aborting.
 
 
+20200810_104146 - Starting Build.
+
+Sending build context to Docker daemon  478.7kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN apk add --no-cache     python3 py3-pip
+ ---> Using cache
+ ---> 9fdfba89bc8a
+Step 4/5 : RUN pip install bs4 && pip install requests
+ ---> Using cache
+ ---> b437c668ee7e
+Step 5/5 : ENTRYPOINT ["python3.8"]
+ ---> Using cache
+ ---> a147f38ca38c
+Successfully built a147f38ca38c
+Successfully tagged blairy/requests:20200810_104146
+20200810_104146 - Build completed successfully.
+
+
+Already up to date.

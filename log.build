@@ -11261,3 +11261,61 @@ Successfully tagged blairy/requests:20200810_115401
 
 
 Already up to date.
+[master 61c5230] Automatic build 20200810_115401
+ 1 file changed, 40 insertions(+)
+20200810_115409 - git completed successfully.
+The push refers to repository [docker.io/blairy/requests]
+1cb3d125c4a6: Preparing
+b5cbededad81: Preparing
+b343ddcee16c: Preparing
+50644c29ef5a: Preparing
+1cb3d125c4a6: Layer already exists
+b343ddcee16c: Layer already exists
+b5cbededad81: Layer already exists
+50644c29ef5a: Layer already exists
+20200810_115401: digest: sha256:95b0455db707ff3d8f726862025272332c45190316e088bfa9350b0ba7293f69 size: 1161
+20200810_115414 - Docker push completed successfully.
+
+
+20200810_115414 - All completed successfully
+20200810_123858 - Starting Build.
+
+Sending build context to Docker daemon  599.6kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN apk add --no-cache     python3 py3-pip
+ ---> Using cache
+ ---> 9fdfba89bc8a
+Step 4/5 : RUN pip install bs4 && pip install selenium
+ ---> Running in dca5c4135310
+Collecting bs4
+  Downloading bs4-0.0.1.tar.gz (1.1 kB)
+Collecting beautifulsoup4
+  Downloading beautifulsoup4-4.9.1-py3-none-any.whl (115 kB)
+Collecting soupsieve>1.2
+  Downloading soupsieve-2.0.1-py3-none-any.whl (32 kB)
+Using legacy setup.py install for bs4, since package 'wheel' is not installed.
+Installing collected packages: soupsieve, beautifulsoup4, bs4
+    Running setup.py install for bs4: started
+    Running setup.py install for bs4: finished with status 'done'
+Successfully installed beautifulsoup4-4.9.1 bs4-0.0.1 soupsieve-2.0.1
+Collecting selenium
+  Downloading selenium-3.141.0-py2.py3-none-any.whl (904 kB)
+Requirement already satisfied: urllib3 in /usr/lib/python3.8/site-packages (from selenium) (1.25.9)
+Installing collected packages: selenium
+Successfully installed selenium-3.141.0
+Removing intermediate container dca5c4135310
+ ---> b936272e0dfe
+Step 5/5 : ENTRYPOINT ["python3.8"]
+ ---> Running in a46168cfb799
+Removing intermediate container a46168cfb799
+ ---> e52ac2e04c98
+Successfully built e52ac2e04c98
+Successfully tagged blairy/requests:20200810_123858
+20200810_123902 - Build completed successfully.
+
+
+Already up to date.

@@ -28427,3 +28427,94 @@ Successfully tagged blairy/requests:20200828_164501
 
 
 Already up to date.
+[master 2b445d8] Automatic build 20200828_164501
+ 1 file changed, 40 insertions(+)
+20200828_164638 - git completed successfully.
+The push refers to repository [docker.io/blairy/requests]
+c9ffdb70d926: Preparing
+b5cbededad81: Preparing
+b343ddcee16c: Preparing
+50644c29ef5a: Preparing
+50644c29ef5a: Waiting
+b5cbededad81: Retrying in 5 seconds
+c9ffdb70d926: Retrying in 5 seconds
+b5cbededad81: Retrying in 4 seconds
+c9ffdb70d926: Retrying in 4 seconds
+b5cbededad81: Retrying in 3 seconds
+c9ffdb70d926: Retrying in 3 seconds
+b5cbededad81: Retrying in 2 seconds
+c9ffdb70d926: Retrying in 2 seconds
+b5cbededad81: Retrying in 1 second
+c9ffdb70d926: Retrying in 1 second
+c9ffdb70d926: Retrying in 10 seconds
+c9ffdb70d926: Retrying in 9 seconds
+c9ffdb70d926: Retrying in 8 seconds
+c9ffdb70d926: Retrying in 7 seconds
+c9ffdb70d926: Retrying in 6 seconds
+c9ffdb70d926: Retrying in 5 seconds
+c9ffdb70d926: Retrying in 4 seconds
+c9ffdb70d926: Retrying in 3 seconds
+c9ffdb70d926: Retrying in 2 seconds
+c9ffdb70d926: Retrying in 1 second
+c9ffdb70d926: Retrying in 15 seconds
+c9ffdb70d926: Retrying in 14 seconds
+c9ffdb70d926: Retrying in 13 seconds
+b343ddcee16c: Retrying in 5 seconds
+c9ffdb70d926: Retrying in 12 seconds
+b343ddcee16c: Retrying in 4 seconds
+c9ffdb70d926: Retrying in 11 seconds
+b343ddcee16c: Retrying in 3 seconds
+c9ffdb70d926: Retrying in 10 seconds
+b343ddcee16c: Retrying in 2 seconds
+c9ffdb70d926: Retrying in 9 seconds
+b343ddcee16c: Retrying in 1 second
+c9ffdb70d926: Retrying in 8 seconds
+c9ffdb70d926: Retrying in 7 seconds
+b5cbededad81: Retrying in 10 seconds
+c9ffdb70d926: Retrying in 6 seconds
+b5cbededad81: Retrying in 9 seconds
+c9ffdb70d926: Retrying in 5 seconds
+b5cbededad81: Retrying in 8 seconds
+c9ffdb70d926: Retrying in 4 seconds
+b5cbededad81: Retrying in 7 seconds
+c9ffdb70d926: Retrying in 3 seconds
+b5cbededad81: Retrying in 6 seconds
+c9ffdb70d926: Retrying in 2 seconds
+b5cbededad81: Retrying in 5 seconds
+c9ffdb70d926: Retrying in 1 second
+b5cbededad81: Retrying in 4 seconds
+b5cbededad81: Retrying in 3 seconds
+b5cbededad81: Retrying in 2 seconds
+b5cbededad81: Retrying in 1 second
+50644c29ef5a: Layer already exists
+b343ddcee16c: Pushed
+c9ffdb70d926: Pushed
+b5cbededad81: Pushed
+20200828_164501: digest: sha256:fd5325a64a8a0633a594e7b792ad4b32c4a005d4a91106d43a832304b2c5ad19 size: 1162
+20200828_170513 - Docker push completed successfully.
+
+
+20200828_170513 - All completed successfully
+20200828_174501 - Starting Build.
+
+Sending build context to Docker daemon  17.91MB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN apk add --no-cache     python3 py3-pip
+ ---> Using cache
+ ---> 9fdfba89bc8a
+Step 4/5 : RUN pip install bs4 && pip install selenium
+ ---> Using cache
+ ---> b936272e0dfe
+Step 5/5 : ENTRYPOINT ["python3.8"]
+ ---> Using cache
+ ---> e52ac2e04c98
+Successfully built e52ac2e04c98
+Successfully tagged blairy/requests:20200828_174501
+20200828_174502 - Build completed successfully.
+
+
+Already up to date.

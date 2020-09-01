@@ -31362,3 +31362,43 @@ Successfully tagged blairy/requests:20200901_124501
 
 
 Already up to date.
+[master e6020b7] Automatic build 20200901_124501
+ 1 file changed, 40 insertions(+)
+20200901_124510 - git completed successfully.
+The push refers to repository [docker.io/blairy/requests]
+c9ffdb70d926: Preparing
+b5cbededad81: Preparing
+b343ddcee16c: Preparing
+50644c29ef5a: Preparing
+50644c29ef5a: Layer already exists
+c9ffdb70d926: Layer already exists
+b343ddcee16c: Layer already exists
+b5cbededad81: Layer already exists
+20200901_124501: digest: sha256:fd5325a64a8a0633a594e7b792ad4b32c4a005d4a91106d43a832304b2c5ad19 size: 1162
+20200901_124518 - Docker push completed successfully.
+
+
+20200901_124518 - All completed successfully
+20200901_134501 - Starting Build.
+
+Sending build context to Docker daemon  22.12MB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN apk add --no-cache     python3 py3-pip
+ ---> Using cache
+ ---> 9fdfba89bc8a
+Step 4/5 : RUN pip install bs4 && pip install selenium
+ ---> Using cache
+ ---> b936272e0dfe
+Step 5/5 : ENTRYPOINT ["python3.8"]
+ ---> Using cache
+ ---> e52ac2e04c98
+Successfully built e52ac2e04c98
+Successfully tagged blairy/requests:20200901_134501
+20200901_134501 - Build completed successfully.
+
+
+Already up to date.

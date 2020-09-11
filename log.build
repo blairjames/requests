@@ -41254,3 +41254,34 @@ Successfully tagged blairy/requests:20200911_204501
 
 
 20200911_204501 - git
+[master defc8e9] Automatic build 20200911_204501
+ 1 file changed, 40 insertions(+)
+20200911_204501 - git
+20200911_204501 - git failed!!
+The push refers to repository [docker.io/blairy/requests]
+20200911_204501 - Docker push FAILED!!
+
+
+20200911_214501 - Starting Build.
+
+Sending build context to Docker daemon  39.07MB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN apk add --no-cache     python3 py3-pip
+ ---> Using cache
+ ---> 9fdfba89bc8a
+Step 4/5 : RUN pip install bs4 && pip install selenium
+ ---> Using cache
+ ---> b936272e0dfe
+Step 5/5 : ENTRYPOINT ["python3.8"]
+ ---> Using cache
+ ---> e52ac2e04c98
+Successfully built e52ac2e04c98
+Successfully tagged blairy/requests:20200911_214501
+20200911_214502 - Build completed successfully.
+
+
+Already up to date.

@@ -43085,3 +43085,41 @@ Successfully tagged blairy/requests:20200915_004501
 
 
 Already up to date.
+[master cfe9fb0] Automatic build 20200915_004501
+ 1 file changed, 40 insertions(+)
+20200915_004510 - git completed successfully.
+The push refers to repository [docker.io/blairy/requests]
+c9ffdb70d926: Preparing
+b5cbededad81: Preparing
+b343ddcee16c: Preparing
+50644c29ef5a: Preparing
+c9ffdb70d926: Layer already exists
+50644c29ef5a: Mounted from blairy/python_3.8.5
+b343ddcee16c: Layer already exists
+b5cbededad81: Pushed
+20200915_004904 - Docker push FAILED!!
+
+
+20200915_014501 - Starting Build.
+
+Sending build context to Docker daemon   42.7MB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN apk add --no-cache     python3 py3-pip
+ ---> Using cache
+ ---> 9fdfba89bc8a
+Step 4/5 : RUN pip install bs4 && pip install selenium
+ ---> Using cache
+ ---> b936272e0dfe
+Step 5/5 : ENTRYPOINT ["python3.8"]
+ ---> Using cache
+ ---> e52ac2e04c98
+Successfully built e52ac2e04c98
+Successfully tagged blairy/requests:20200915_014501
+20200915_014501 - Build completed successfully.
+
+
+Already up to date.

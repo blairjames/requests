@@ -1,10 +1,4 @@
 FROM alpine:latest
 RUN apk update && apk upgrade
-RUN apk add --no-cache \
-    python3 py3-pip
-RUN pip install bs4 && pip install selenium
+RUN apk add py3-pip py3-beautifulsoup4
 ENTRYPOINT ["python3.8"]
-
-#FROM scratch
-#COPY --from=0 / /
-

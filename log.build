@@ -109516,3 +109516,28 @@ Successfully tagged blairy/requests:20201230_203301
 
 
 20201230_203302 - git
+[master 4ca4564] Automatic build 20201230_203301
+ 1 file changed, 25 insertions(+)
+20201230_203302 - git
+20201230_203302 - git failed!!
+The push refers to repository [docker.io/blairy/requests]
+20201230_203302 - Docker push FAILED!!
+
+
+20201230_213301 - Starting Build.
+
+Sending build context to Docker daemon  200.2MB
+Step 1/3 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/3 : RUN apk update && apk upgrade &&     apk add py3-pip py3-beautifulsoup4
+ ---> Using cache
+ ---> 8dab6c11afc2
+Step 3/3 : ENTRYPOINT ["python3.8"]
+ ---> Using cache
+ ---> 38a755a154d2
+Successfully built 38a755a154d2
+Successfully tagged blairy/requests:20201230_213301
+20201230_213302 - Build completed successfully.
+
+
+20201230_213302 - git

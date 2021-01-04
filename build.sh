@@ -79,5 +79,9 @@ else
 fi
 
 
+# Prune
+/usr/bin/git gc --prune
+
+
 # All completed successfully
 logger "All completed successfully"

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 workingDir="requests_docker_image"
+
 # Env Vars for SSH.
 source /root/.ssh/agent/root || . /root/.ssh/agent/root
 
@@ -80,7 +81,7 @@ fi
 
 
 # Prune
-/usr/bin/git gc --prune
+/usr/bin/git gc --prune || logger "Error! Git-GC failed."
 
 
 # All completed successfully

@@ -121272,3 +121272,34 @@ Successfully tagged blairy/requests:20210117_103301
 
 
 Already up to date.
+[master e9195e4] Automatic build 20210117_103301
+ 1 file changed, 31 insertions(+)
+20210117_103310 - git completed successfully.
+The push refers to repository [docker.io/blairy/requests]
+2dcdacc3c736: Preparing
+50644c29ef5a: Preparing
+50644c29ef5a: Layer already exists
+2dcdacc3c736: Layer already exists
+20210117_103301: digest: sha256:fa4f9c1988b4c1e8fce22f0e3596826365a6ac824621904abbe78bf65ecfa8cb size: 740
+20210117_103316 - Docker push completed successfully.
+
+
+20210117_103316 - Error! Git-GC failed.
+20210117_103316 - All completed successfully
+20210117_113301 - Starting Build.
+
+Sending build context to Docker daemon  15.75MB
+Step 1/3 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/3 : RUN apk update && apk upgrade &&     apk add py3-pip py3-beautifulsoup4
+ ---> Using cache
+ ---> 8dab6c11afc2
+Step 3/3 : ENTRYPOINT ["python3.8"]
+ ---> Using cache
+ ---> 38a755a154d2
+Successfully built 38a755a154d2
+Successfully tagged blairy/requests:20210117_113301
+20210117_113301 - Build completed successfully.
+
+
+Already up to date.

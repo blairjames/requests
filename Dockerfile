@@ -1,4 +1,12 @@
 FROM alpine:latest
-RUN apk update && apk upgrade && \
-    apk add py3-pip py3-beautifulsoup4
-ENTRYPOINT ["python3.8"]
+
+RUN \
+  apk update --no-cache \
+  && apk add \
+    py3-pip \
+    py3-beautifulsoup4 \
+    py3-requests \
+    util-linux-misc \
+  && apk upgrade 
+
+ENTRYPOINT ["/usr/bin/python"]

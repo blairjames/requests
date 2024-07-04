@@ -18,6 +18,10 @@ push() {
   sudo docker push "${image}"
 }
 
+trigger_build() {
+  curl -X POST https://hub.docker.com/api/build/v1/source/c1d4a09a-e39a-4378-8be0-d0e175c5ab98/trigger/f0e0596d-2c44-4ee9-b44c-36b682e8ef6a/call/ 
+}
+
 main() {
   local path
   local timestamp

@@ -41,6 +41,7 @@ main() {
   push "${image_name}" || exit 1
   build "${path}" "${latest}" || exit 1
   push "${latest}" || exit 1
+  trigger_build || exit 1
 }
 
 main "$@"

@@ -15,7 +15,7 @@
 
 ### Dockerfile
 
-```
+```dockerfile
 FROM alpine:latest
 
 # Install Python, Requests and tools
@@ -56,7 +56,7 @@ ENTRYPOINT ["/usr/bin/python"]
 
 ### Build Script
 
-```
+```bash
 #!/usr/bin/env bash
 
 build() {
